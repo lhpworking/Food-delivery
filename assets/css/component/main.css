@@ -1,0 +1,211 @@
+.main-block h1 {
+    padding    : 7.3rem 0 5.9rem 0;
+    text-align : center;
+    font-weight: 600;
+    font-size  : 4.4rem;
+    line-height: 82%;
+    color      : var(--txt-color-dark);
+}
+
+.hr {
+    border: 3px solid #E4E4E4;
+    width : 88.4rem;
+    margin: auto;
+}
+
+.main-app-content {
+    max-width: 56.8rem;
+    width    : 100%;
+
+}
+
+.main-app-work {
+    display     : flex;
+    align-items : center;
+    padding-left: 15rem;
+}
+
+.main-app-work:nth-child(even) {
+    flex-direction: row-reverse;
+    background    : #fff;
+}
+
+
+.main-app-function h3 {
+    font-size     : 2.4rem;
+    line-height   : 150%;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.1px;
+    font-weight   : 700;
+    color         : var(--color-primary);
+    padding-bottom: 1.7rem;
+}
+
+.main-app-explain h2 {
+    font-weight   : 700;
+    font-size     : 4rem;
+    letter-spacing: 0.2px;
+    line-height   : 142%;
+    color         : var(--txt-color-dark);
+    max-width     : 56.1rem;
+    padding-bottom: 1.7rem;
+}
+
+.main-app-desc h4 {
+    font-weight: 500;
+    font-size  : 2.4rem;
+    line-height: 158%;
+    /* or 158% */
+    /* second text */
+    color      : var(--txt-muted);
+    max-width  : 46.7rem;
+}
+
+.download-block {
+    position      : relative;
+    padding-bottom: 3.8rem;
+}
+
+.download-content {
+    position  : absolute;
+    top       : 0;
+    left      : 50%;
+    transform : translate(-50%, 0);
+    text-align: center;
+    max-width : 86rem;
+    width     : 100%;
+}
+
+.download-content h2 {
+    padding    : 14rem 0 1.7rem 0;
+    font-weight: 700;
+    font-size  : 4rem;
+    line-height: 142%;
+    /* Light text */
+    color      : var(--txt-color-white);
+}
+
+.download-content h4 {
+    font-weight   : 500;
+    font-size     : 2.4rem;
+    line-height   : 158%;
+    max-width     : 86rem;
+    color         : #FFFFFF;
+    padding-bottom: 6rem;
+}
+
+.button-download {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 0 1.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-block h1 {
+        padding  : 5rem 0 3rem 0;
+        font-size: 4rem;
+    }
+
+    .main-app-work {
+        display     : flex;
+        align-items : center;
+        padding-left: 2rem;
+    }
+
+    .download-content h2 {
+        padding: 5rem 0 1.5rem 0;
+    }
+
+    .download-content h4 {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-app-work {
+        display       : flex;
+        flex-direction: column-reverse;
+        align-items   : center;
+        padding-left  : 0;
+    }
+
+    .main-app-work:nth-child(even) {
+        flex-direction: column-reverse;
+        background    : #fff
+    }
+
+    .hr {
+        width: 100%;
+
+    }
+
+    .main-app-function h3 {
+        font-size: 2rem;
+        padding  : 2rem 0 1rem 0;
+    }
+
+    .download-content h2 {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .download-content h4 {
+        font-size     : 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-app-function h3 {
+        font-size: 2rem;
+        padding  : 1rem 0 1rem 0;
+    }
+
+    .main-app-explain h2 {
+        font-size     : 2.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-app-desc h4 {
+        font-size     : 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-block h1 {
+        font-size: 3rem;
+    }
+
+    .download-block {
+        background-color: #252B42;
+        padding-bottom  : 30rem;
+    }
+
+    .download-content {
+        max-width: 25rem;
+    }
+
+    .download-content h2 {
+        font-size     : 3rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .download-content h4 {
+        font-size     : 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .download-block-img {
+        display: none;
+    }
+
+    .button-download button {
+        padding  : 1rem 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    .main-app-content {
+        text-align: center;
+        max-width : 30rem;
+    }
+}
