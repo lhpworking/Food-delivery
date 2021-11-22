@@ -1,9 +1,12 @@
 .header {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    padding         : 2.8rem 0;
     background-color: #fff;
+}
+
+.header__container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 2.8rem 0;
 }
 
 .mobile-menu {
@@ -29,6 +32,7 @@
     padding-left: 9.4rem;
 }
 
+
 .header-menu-link {
     color         : var(--txt-color-dark);
     font-size     : 1.6rem;
@@ -45,6 +49,9 @@
     position: relative;
 }
 
+.hero-block-img {
+    width: 100%;
+}
 
 .hero-content {
     position  : absolute;
@@ -169,7 +176,7 @@
 
     }
 
-    .header {
+    .header__container {
         padding       : 1rem 0;
         flex-direction: column;
     }
